@@ -72,7 +72,7 @@ E5 <--> B1
 
 ### Build
 
-`docker run -d -it -p 80:80/tcp --name megaman2`
+`docker build -t bugtamer/megaman2 .`
 
 ### Run
 
