@@ -68,6 +68,16 @@ E1 <--> E2 <--> E3 <--> E4 <--> E5 <--> B1
 E5 <--> B1
 ```
 
+## Github page deployment
+
+### Add dependency
+
+`ng add angular-cli-ghpages`
+
+### Deploy
+
+`ng deploy --base-href=/megaman2/`
+
 ## Info
 
 - Bisqwit. [Mega Man 2 ※ Cracking Videogame Passwords S1e1](https://www.youtube.com/watch?v=0eQyYrSQPew). (2020-07-19)
