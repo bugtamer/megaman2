@@ -1,0 +1,11 @@
+<pre>{{ passwordCoordinates }}</pre>
+
+<button (click)="password.incEtanks()" [disabled]="isIncButtonDisable">Increase E-tank</button>
+<button (click)="password.decEtanks()" [disabled]="isDecButtonDisable">Decrease E-tank</button>
+
+<p>E-tanks: {{ password.currentEtanks }}</p>
+
+<div *ngFor="let boss of password.bosses">
+  <input type="checkbox" (change)="boss.toggleIsDefeated()" [id]="boss.name">
+  <label [for]="boss.name">{{ boss.item.join(' + ') }}</label>
+</div>
