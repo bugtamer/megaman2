@@ -6,10 +6,7 @@
 
 - [Password generator](#password-generator)
   - [Default password](#default-password)
-  - [E-tank codification](#e-tank-codification)
   - [Boss codification based on the number of E-tanks](#boss-codification-based-on-the-number-of-e-tanks)
-    - [Boss transitions when E-tanks change](#boss-transitions-when-e-tanks-change)
-    - [All legal coordinate transitions](#all-legal-coordinate-transitions)
 - [Requirements](#requirements)
 - [Install and run](#install-and-run)
 - [Docker](#docker)
@@ -40,53 +37,24 @@
 | D | * |   | * |   |   |
 | E |   |   | * |   | * |
 
-### E-tank codification
-
-| E-tanks | Coordinate |
-|:-------:|:----------:|
-|    0    |     A1     |
-|    1    |     A2     |
-|    2    |     A3     |
-|    3    |     A4     |
-|    4    |     A5     |
-
 ### Boss codification based on the number of E-tanks
 
-| Boss name | Item                        | Alive | Alive | Alive | Alive | Alive | Dead | Dead | Dead | Dead | Dead |
-| --------- | --------------------------- |:-----:|:-----:|:-----:|:-----:|:-----:|:----:|:----:|:----:|:----:|:----:|
-| # E-Tanks |                             |   0   |   1   |   2   |   3   |   4   |   0  |   1  |   2  |   3  |   4  |
-| E-Tank    |                             |  A1   |  A2   |  A3   |  A4   |  A5   |  A1  |  A2  |  A3  |  A4  |  A5  |
-| Bubbleman |                             |  D1   |  D2   |  D3   |  D4   |  D5   |  C3  |  C4  |  C5  |  D1  |  D2  |
-| Heatman   | Item-1: levitating platform |  B2   |  B3   |  B4   |  B5   |  C1   |  D5  |  E1  |  E2  |  E3  |  E4  |
-| Airman    | Item-2: jet sled            |  E3   |  E4   |  E5   |  B1   |  B2   |  D2  |  D3  |  D4  |  D5  |  E1  |
-| Woodman   |                             |  D3   |  D4   |  D5   |  E1   |  E2   |  B5  |  C1  |  C2  |  C3  |  C4  |
-| Quickman  |                             |  B4   |  B5   |  C1   |  C2   |  C3   |  C4  |  C5  |  D1  |  D2  |  D3  |
-| Flashman  | Item-3: crawling platform   |  C1   |  C2   |  C3   |  C4   |  C5   |  E4  |  E5  |  B1  |  B2  |  B3  |
-| Crashman  |                             |  C5   |  D1   |  D2   |  D3   |  D4   |  E2  |  E3  |  E4  |  E5  |  B1  |
-| Metalman  |                             |  E5   |  B1   |  B2   |  B3   |  B4   |  E1  |  E2  |  E3  |  E4  |  E5  |
+| Boss name | Item   | Alive | Alive | Alive | Alive | Alive | Dead | Dead | Dead | Dead | Dead |
+| --------- | ------ |:-----:|:-----:|:-----:|:-----:|:-----:|:----:|:----:|:----:|:----:|:----:|
+| # E-Tanks |        |   0   |   1   |   2   |   3   |   4   |   0  |   1  |   2  |   3  |   4  |
+| E-Tank    |        |  A1   |  A2   |  A3   |  A4   |  A5   |  A1  |  A2  |  A3  |  A4  |  A5  |
+| Bubbleman |        |  D1   |  D2   |  D3   |  D4   |  D5   |  C3  |  C4  |  C5  |  D1  |  D2  |
+| Heatman   | Item-1 |  B2   |  B3   |  B4   |  B5   |  C1   |  D5  |  E1  |  E2  |  E3  |  E4  |
+| Airman    | Item-2 |  E3   |  E4   |  E5   |  B1   |  B2   |  D2  |  D3  |  D4  |  D5  |  E1  |
+| Woodman   |        |  D3   |  D4   |  D5   |  E1   |  E2   |  B5  |  C1  |  C2  |  C3  |  C4  |
+| Quickman  |        |  B4   |  B5   |  C1   |  C2   |  C3   |  C4  |  C5  |  D1  |  D2  |  D3  |
+| Flashman  | Item-3 |  C1   |  C2   |  C3   |  C4   |  C5   |  E4  |  E5  |  B1  |  B2  |  B3  |
+| Crashman  |        |  C5   |  D1   |  D2   |  D3   |  D4   |  E2  |  E3  |  E4  |  E5  |  B1  |
+| Metalman  |        |  E5   |  B1   |  B2   |  B3   |  B4   |  E1  |  E2  |  E3  |  E4  |  E5  |
 
-#### Boss transitions when E-tanks change
-
-Crashman example:
-
-| E-tanks | Undefeated | Defeated |
-|:-------:|:----------:| -------- |
-|    0    |     C5     |    E2    |
-|    1    |     D1     |    E3    |
-|    2    |     D2     |    E4    |
-|    3    |     D3     |    E5    |
-|    4    |     D4     |    B1    |
-
-##### All legal coordinate transitions
-
-```
-A1 <--> A2 <--> A3 <--> A4 <--> A5 <--> A1
-B1 <--> B2 <--> B3 <--> B4 <--> B5 <--> C1
-C1 <--> C2 <--> C3 <--> C4 <--> C5 <--> D1
-D1 <--> D2 <--> D3 <--> D4 <--> D5 <--> E1
-E1 <--> E2 <--> E3 <--> E4 <--> E5 <--> B1
-E5 <--> B1
-```
+- Item-1: levitating platform
+- Item-2: jet sled
+- Item-3: crawling platform
 
 ## Requirements
 
