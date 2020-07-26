@@ -2,6 +2,22 @@
 
 [Check it out](https://bugtamer.github.io/megaman2/)
 
+## Table Of Content
+
+- [Password generator](#password-generator)
+  - [Default password](#default-password)
+  - [E-tank codification](#e-tank-codification)
+  - [Boss codification when E-tanks are zero](#boss-codification-when-e-tanks-are-zero)
+    - [Boss transitions when E-tanks change](#boss-transitions-when-e-tanks-change)
+    - [All legal coordinate transitions](#all-legal-coordinate-transitions)
+- [Docker](#docker)
+  - [Build](#build)
+  - [Run](#run)
+- [Github page deployment](#github-page-deployment)
+  - [Add dependency](#add-dependency)
+  - [Deploy](#deploy)
+- [Info](#info)
+
 ## Password generator
 
 - Each password has 9 coordinates.
