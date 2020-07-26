@@ -68,6 +68,17 @@ E1 <--> E2 <--> E3 <--> E4 <--> E5 <--> B1
 E5 <--> B1
 ```
 
+## Docker
+
+### Build
+
+`docker run -d -it -p 80:80/tcp --name megaman2`
+
+### Run
+
+- `docker run -d -it -p 80:80/tcp --name megaman2 bugtamer/megaman2:latest`
+- http://localhost
+
 ## Github page deployment
 
 ### Add dependency
