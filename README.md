@@ -7,9 +7,11 @@
 - [Password generator](#password-generator)
   - [Default password](#default-password)
   - [E-tank codification](#e-tank-codification)
-  - [Boss codification when E-tanks are zero](#boss-codification-when-e-tanks-are-zero)
+  - [Boss codification based on the number of E-tanks](#boss-codification-based-on-the-number-of-e-tanks)
     - [Boss transitions when E-tanks change](#boss-transitions-when-e-tanks-change)
     - [All legal coordinate transitions](#all-legal-coordinate-transitions)
+- [Requirements](#requirements)
+- [Install and run](#install-and-run)
 - [Docker](#docker)
   - [Build](#build)
   - [Run](#run)
@@ -48,18 +50,20 @@
 |    3    |     A4     |
 |    4    |     A5     |
 
-### Boss codification when E-tanks are zero
+### Boss codification based on the number of E-tanks
 
-| Boss name | Item                        | Undefeated | Defeated |
-| --------- | --------------------------- |:----------:|:--------:|
-| Airman    | Item-2: jet sled            |     E3     |    D2    |
-| Bubbleman |                             |     D1     |    C3    |
-| Crashman  |                             |     C5     |    E2    |
-| Flashman  | Item-3: crawling platform   |     C1     |    E4    |
-| Heatman   | Item-1: levitating platform |     B2     |    D5    |
-| Metalman  |                             |     E5     |    E1    |
-| Quickman  |                             |     B4     |    C4    |
-| Woodman   |                             |     D3     |    B5    |
+| Boss name | Item                        | Alive | Alive | Alive | Alive | Alive | Dead | Dead | Dead | Dead | Dead |
+| --------- | --------------------------- |:-----:|:-----:|:-----:|:-----:|:-----:|:----:|:----:|:----:|:----:|:----:|
+| # E-Tanks |                             |   0   |   1   |   2   |   3   |   4   |   0  |   1  |   2  |   3  |   4  |
+| E-Tank    |                             |  A1   |  A2   |  A3   |  A4   |  A5   |  A1  |  A2  |  A3  |  A4  |  A5  |
+| Bubbleman |                             |  D1   |  D2   |  D3   |  D4   |  D5   |  C3  |  C4  |  C5  |  D1  |  D2  |
+| Heatman   | Item-1: levitating platform |  B2   |  B3   |  B4   |  B5   |  C1   |  D5  |  E1  |  E2  |  E3  |  E4  |
+| Airman    | Item-2: jet sled            |  E3   |  E4   |  E5   |  B1   |  B2   |  D2  |  D3  |  D4  |  D5  |  E1  |
+| Woodman   |                             |  D3   |  D4   |  D5   |  E1   |  E2   |  B5  |  C1  |  C2  |  C3  |  C4  |
+| Quickman  |                             |  B4   |  B5   |  C1   |  C2   |  C3   |  C4  |  C5  |  D1  |  D2  |  D3  |
+| Flashman  | Item-3: crawling platform   |  C1   |  C2   |  C3   |  C4   |  C5   |  E4  |  E5  |  B1  |  B2  |  B3  |
+| Crashman  |                             |  C5   |  D1   |  D2   |  D3   |  D4   |  E2  |  E3  |  E4  |  E5  |  B1  |
+| Metalman  |                             |  E5   |  B1   |  B2   |  B3   |  B4   |  E1  |  E2  |  E3  |  E4  |  E5  |
 
 #### Boss transitions when E-tanks change
 
@@ -83,6 +87,18 @@ D1 <--> D2 <--> D3 <--> D4 <--> D5 <--> E1
 E1 <--> E2 <--> E3 <--> E4 <--> E5 <--> B1
 E5 <--> B1
 ```
+
+## Requirements
+
+- Node.js 14.4.0
+- Angular 9
+- Angular CLI 9.1.12
+
+## Install and run
+
+- Within the project folder:
+- `npm i`
+- `ng serve -o`
 
 ## Docker
 
