@@ -43,14 +43,14 @@
 | --------- | ------ |:-----:|:-----:|:-----:|:-----:|:-----:|:----:|:----:|:----:|:----:|:----:|
 | # E-Tanks |        |   0   |   1   |   2   |   3   |   4   |   0  |   1  |   2  |   3  |   4  |
 | E-Tank    |        |  A1   |  A2   |  A3   |  A4   |  A5   |  A1  |  A2  |  A3  |  A4  |  A5  |
-| Bubbleman |        |  D1   |  D2   |  D3   |  D4   |  D5   |  C3  |  C4  |  C5  |  D1  |  D2  |
-| Heatman   | Item-1 |  B2   |  B3   |  B4   |  B5   |  C1   |  D5  |  E1  |  E2  |  E3  |  E4  |
 | Airman    | Item-2 |  E3   |  E4   |  E5   |  B1   |  B2   |  D2  |  D3  |  D4  |  D5  |  E1  |
-| Woodman   |        |  D3   |  D4   |  D5   |  E1   |  E2   |  B5  |  C1  |  C2  |  C3  |  C4  |
-| Quickman  |        |  B4   |  B5   |  C1   |  C2   |  C3   |  C4  |  C5  |  D1  |  D2  |  D3  |
-| Flashman  | Item-3 |  C1   |  C2   |  C3   |  C4   |  C5   |  E4  |  E5  |  B1  |  B2  |  B3  |
+| Bubbleman |        |  D1   |  D2   |  D3   |  D4   |  D5   |  C3  |  C4  |  C5  |  D1  |  D2  |
 | Crashman  |        |  C5   |  D1   |  D2   |  D3   |  D4   |  E2  |  E3  |  E4  |  E5  |  B1  |
+| Flashman  | Item-3 |  C1   |  C2   |  C3   |  C4   |  C5   |  E4  |  E5  |  B1  |  B2  |  B3  |
+| Heatman   | Item-1 |  B2   |  B3   |  B4   |  B5   |  C1   |  D5  |  E1  |  E2  |  E3  |  E4  |
 | Metalman  |        |  E5   |  B1   |  B2   |  B3   |  B4   |  E1  |  E2  |  E3  |  E4  |  E5  |
+| Quickman  |        |  B4   |  B5   |  C1   |  C2   |  C3   |  C4  |  C5  |  D1  |  D2  |  D3  |
+| Woodman   |        |  D3   |  D4   |  D5   |  E1   |  E2   |  B5  |  C1  |  C2  |  C3  |  C4  |
 
 - Item-1: levitating platform
 - Item-2: jet sled
