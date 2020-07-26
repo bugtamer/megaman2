@@ -117,8 +117,13 @@
               "devServerTarget": "megaman2:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "megaman2"
 }

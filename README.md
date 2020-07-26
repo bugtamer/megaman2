@@ -1,5 +1,7 @@
 # Megaman2
 
+[Check it out](https://bugtamer.github.io/megaman2/)
+
 ## Password generator
 
 - Each password has 9 coordinates.
@@ -70,4 +72,5 @@ E5 <--> B1
 
 - Bisqwit. [Mega Man 2 ※ Cracking Videogame Passwords S1e1](https://www.youtube.com/watch?v=0eQyYrSQPew). (2020-07-19)
 - Scykoh. [Mega Man 2 - Glitchfest](https://www.youtube.com/watch?v=koTEUbNwv9w). (2020-07-19)
+- [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages)
 - [Angular README.md](./angular.md)
