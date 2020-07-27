@@ -1,3 +1,8 @@
+import { Injector } from '@angular/core';
+import { AsciiParserService } from '../services/ascii-parser/ascii-parser.service';
+
+const INJECTOR = Injector.create({providers: [{provide: AsciiParserService, deps: []}]});
+
 export type AsciiDecimalCode = number;
 
 export type XRange = 'A' | 'B' | 'C' | 'D' | 'E';
@@ -10,20 +15,22 @@ export class Coordinate {
 
   private xCharCode: AsciiDecimalCode;
   private yCharCode: AsciiDecimalCode;
+  private parser:    AsciiParserService;
 
   constructor(x: XRange, y: YRange) {
-    this.xCharCode = this.letterToCharCode(x);
-    this.yCharCode = this.numberToCharCode(y);
+    this.parser    = INJECTOR.get(AsciiParserService);
+    this.xCharCode = this.parser.letterToCharCode(x);
+    this.yCharCode = this.parser.numberToCharCode(y);
   }
-  
+
   get xy(): string { return String.fromCharCode(this.xCharCode, this.yCharCode); }
   get x():  string { return String.fromCharCode(this.xCharCode); }
-  get y():  number { return this.numberCharCodeToNumber(this.yCharCode); }
+  get y():  number { return this.parser.numberCharCodeToNumber(this.yCharCode); }
 
   get toIndex(): number {
-    const x = this.numberCharCodeToNumber(this.xCharCode);
-    const y = this.letterCharCodeToNumber(this.yCharCode);
-    const rowNumber = this.numberCharCodeToNumber(this.xLastRowCharCode);
+    const x = this.parser.numberCharCodeToNumber(this.xCharCode);
+    const y = this.parser.letterCharCodeToNumber(this.yCharCode);
+    const rowNumber = this.parser.numberCharCodeToNumber(this.xLastRowCharCode);
     return rowNumber * y + x;
   }
 
@@ -78,30 +85,11 @@ export class Coordinate {
   private get isFirstColumn(): boolean { return this.yCharCode === this.yFirstColumCharCode; }
   private get isLastColumn():  boolean { return this.yCharCode === this.yLastColumCharCode;  }
 
-  private get xFirstRowCharCode():  AsciiDecimalCode { return this.letterToCharCode('A'); }
-  private get xSecondRowCharCode(): AsciiDecimalCode { return this.letterToCharCode('B'); }
-  private get xLastRowCharCode():   AsciiDecimalCode { return this.letterToCharCode('E'); }
+  private get xFirstRowCharCode():  AsciiDecimalCode { return this.parser.letterToCharCode('A'); }
+  private get xSecondRowCharCode(): AsciiDecimalCode { return this.parser.letterToCharCode('B'); }
+  private get xLastRowCharCode():   AsciiDecimalCode { return this.parser.letterToCharCode('E'); }
 
-  private get yFirstColumCharCode(): AsciiDecimalCode { return this.numberToCharCode(Coordinate.Y_MIN); }
-  private get yLastColumCharCode():  AsciiDecimalCode { return this.numberToCharCode(Coordinate.Y_MAX); }
-
-  private numberCharCodeToNumber(number: AsciiDecimalCode) :number {
-    const numberOffset = this.numberToCharCode(0);
-    return number - numberOffset;
-  }
-
-  private letterCharCodeToNumber(letter: AsciiDecimalCode) :number {
-    const letterOffset = this.letterToCharCode('A') - 1;
-   return letter - letterOffset;
-  }
-
-  private numberToCharCode(singleDigit: number): AsciiDecimalCode {
-    return this.letterToCharCode( `${singleDigit}` );
-  }
-
-  private letterToCharCode(singleLetter: string): AsciiDecimalCode {
-    const firstChar = 0;
-    return singleLetter.charCodeAt(firstChar);
-  }
+  private get yFirstColumCharCode(): AsciiDecimalCode { return this.parser.numberToCharCode(Coordinate.Y_MIN); }
+  private get yLastColumCharCode():  AsciiDecimalCode { return this.parser.numberToCharCode(Coordinate.Y_MAX); }
 
 }

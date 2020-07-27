@@ -1,18 +1,23 @@
+import { Injector } from '@angular/core';
+import { InitialStateService } from '../services/initial-state/initial-state.service';
 import { Coordinate as xy } from './coordinate.model';
-import { InitialState } from './initial-state.model';
 import { Boss } from './boss.model';
+
+const INJECTOR = Injector.create({providers: [{provide: InitialStateService, deps: []}]});
 
 export class Password {
 
-  readonly etanks    : xy   = InitialState.etanks();
-  readonly airman    : Boss = InitialState.airman();
-  readonly bubbleman : Boss = InitialState.bubbleman();
-  readonly crashman  : Boss = InitialState.crashman();
-  readonly flashman  : Boss = InitialState.flashman()
-  readonly heatman   : Boss = InitialState.heatman();
-  readonly metalman  : Boss = InitialState.metalman();
-  readonly quickman  : Boss = InitialState.quickman();
-  readonly woodman   : Boss = InitialState.woodman();
+  private initialState: InitialStateService = INJECTOR.get(InitialStateService);
+
+  readonly etanks    : xy   = this.initialState.etanks();
+  readonly airman    : Boss = this.initialState.airman();
+  readonly bubbleman : Boss = this.initialState.bubbleman();
+  readonly crashman  : Boss = this.initialState.crashman();
+  readonly flashman  : Boss = this.initialState.flashman()
+  readonly heatman   : Boss = this.initialState.heatman();
+  readonly metalman  : Boss = this.initialState.metalman();
+  readonly quickman  : Boss = this.initialState.quickman();
+  readonly woodman   : Boss = this.initialState.woodman();
 
   get compute(): Array<xy> {
     const cartesianCoordinates: Array<xy> = [ this.etanks ];
