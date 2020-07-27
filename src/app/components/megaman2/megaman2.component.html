@@ -1,9 +1,10 @@
+<mm2-password-board [data]="password.compute"></mm2-password-board>
 <pre>{{ passwordCoordinates }}</pre>
 
 <button (click)="password.incEtanks()" [disabled]="isIncButtonDisable">Increase E-tank</button>
 <button (click)="password.decEtanks()" [disabled]="isDecButtonDisable">Decrease E-tank</button>
 
-<p>E-tanks: {{ password.currentEtanks }}</p>
+<p>{{ password.currentEtanks }} E-tanks</p>
 
 <div *ngFor="let boss of password.bosses">
   <input type="checkbox" (change)="boss.toggleIsDefeated()" [id]="boss.name">
