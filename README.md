@@ -87,7 +87,7 @@
 
 ### Deploy
 
-`ng deploy --base-href=/megaman2/`
+`ng deploy --base-href=/megaman2/ --message="vX.Y.Z"`
 
 ## Info
 
