@@ -29,7 +29,7 @@ export class PasswordBoardComponent {
   private getMarker(x: string, y: string): string {
     const target = `${x}${y}`;
     const wasFound = this.data.find(candidate => candidate.xy === target);
-    return wasFound ? '*' : '';
+    return wasFound ? '●' : '';
   }
 
   private get colHeader(): Array<string> {
