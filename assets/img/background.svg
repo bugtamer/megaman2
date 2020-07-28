@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8">
+  <rect width="8" height="8" x="0" y="0" fill="#3cbcfc" />
+  
+  <rect width="1" height="1" x="1" y="1" fill="#0070ec" />
+  <rect width="1" height="1" x="5" y="1" fill="#0070ec" />
+  <rect width="1" height="1" x="4" y="2" fill="#0070ec" />
+  <rect width="1" height="1" x="3" y="3" fill="#0070ec" />
+  <rect width="1" height="1" x="2" y="4" fill="#0070ec" />
+  <rect width="1" height="1" x="1" y="5" fill="#0070ec" />
+
+  <polygon points="2,7, 7,7, 7,2,  7,3, 7,4,  6,4, 6,5,  5,5, 5,6,  4,6, 4,7" style="fill:#0070ec;stroke:#0070ec;stroke-width:2" />
+  
+  <polyline points="0,8, 8,8, 8,0" style="fill:none;stroke:black;stroke-width:2" />
+</svg>
