@@ -39,18 +39,21 @@
 
 ### Boss codification based on the number of E-tanks
 
-| Boss name | Item   | Alive | Alive | Alive | Alive | Alive | Dead | Dead | Dead | Dead | Dead |
-| --------- | ------ |:-----:|:-----:|:-----:|:-----:|:-----:|:----:|:----:|:----:|:----:|:----:|
-| # E-Tanks |        |   0   |   1   |   2   |   3   |   4   |   0  |   1  |   2  |   3  |   4  |
-| E-Tank    |        |  A1   |  A2   |  A3   |  A4   |  A5   |  A1  |  A2  |  A3  |  A4  |  A5  |
-| Airman    | Item-2 |  E3   |  E4   |  E5   |  B1   |  B2   |  D2  |  D3  |  D4  |  D5  |  E1  |
-| Bubbleman |        |  D1   |  D2   |  D3   |  D4   |  D5   |  C3  |  C4  |  C5  |  D1  |  D2  |
-| Crashman  |        |  C5   |  D1   |  D2   |  D3   |  D4   |  E2  |  E3  |  E4  |  E5  |  B1  |
-| Flashman  | Item-3 |  C1   |  C2   |  C3   |  C4   |  C5   |  E4  |  E5  |  B1  |  B2  |  B3  |
-| Heatman   | Item-1 |  B2   |  B3   |  B4   |  B5   |  C1   |  D5  |  E1  |  E2  |  E3  |  E4  |
-| Metalman  |        |  E5   |  B1   |  B2   |  B3   |  B4   |  E1  |  E2  |  E3  |  E4  |  E5  |
-| Quickman  |        |  B4   |  B5   |  C1   |  C2   |  C3   |  C4  |  C5  |  D1  |  D2  |  D3  |
-| Woodman   |        |  D3   |  D4   |  D5   |  E1   |  E2   |  B5  |  C1  |  C2  |  C3  |  C4  |
+- :robot: = Alive
+- :skull: = Dead
+
+| Boss name | Item   | :robot: | :robot: | :robot: | :robot: | :robot: | :skull: | :skull: | :skull: | :skull: | :skull: |
+| --------- | ------ |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
+| # E-Tanks |        |    0    |    1    |    2    |    3    |    4    |    0    |    1    |    2    |    3    |    4    |
+| E-Tank    |        |   A1    |   A2    |   A3    |   A4    |   A5    |   A1    |   A2    |   A3    |   A4    |   A5    |
+| Airman    | Item-2 |   E3    |   E4    |   E5    |   B1    |   B2    |   D2    |   D3    |   D4    |   D5    |   E1    |
+| Bubbleman |        |   D1    |   D2    |   D3    |   D4    |   D5    |   C3    |   C4    |   C5    |   D1    |   D2    |
+| Crashman  |        |   C5    |   D1    |   D2    |   D3    |   D4    |   E2    |   E3    |   E4    |   E5    |   B1    |
+| Flashman  | Item-3 |   C1    |   C2    |   C3    |   C4    |   C5    |   E4    |   E5    |   B1    |   B2    |   B3    |
+| Heatman   | Item-1 |   B2    |   B3    |   B4    |   B5    |   C1    |   D5    |   E1    |   E2    |   E3    |   E4    |
+| Metalman  |        |   E5    |   B1    |   B2    |   B3    |   B4    |   E1    |   E2    |   E3    |   E4    |   E5    |
+| Quickman  |        |   B4    |   B5    |   C1    |   C2    |   C3    |   C4    |   C5    |   D1    |   D2    |   D3    |
+| Woodman   |        |   D3    |   D4    |   D5    |   E1    |   E2    |   B5    |   C1    |   C2    |   C3    |   C4    |
 
 - Item-1: levitating platform
 - Item-2: jet sled
