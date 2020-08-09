@@ -1,8 +1,10 @@
 <h1>Megaman 2</h1>
 <h2>Password generator</h2>
 
-<mm2-password-board [data]="password.compute"></mm2-password-board>
-<pre>{{ passwordCoordinates }}</pre>
+<div class="center">
+  <mm2-password-screen [password]="password"></mm2-password-screen>
+  <pre>{{ passwordCoordinates }}</pre>
+</div>
 
 <button (click)="password.incEtanks()" [disabled]="isIncButtonDisable">Increase E-tank</button>
 <button (click)="password.decEtanks()" [disabled]="isDecButtonDisable">Decrease E-tank</button>

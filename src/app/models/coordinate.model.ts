@@ -70,6 +70,12 @@ export class Coordinate {
     }
   }
 
+  clone(): Coordinate {
+    const x = <XRange> this.x;
+    const y = <YRange> this.y;
+    return new Coordinate(x, y);
+  }
+
   // LOWER LEVEL IMPLEMENTATION DETAILS
 
   private get isEtankLowerLimit(): boolean { return this.isFirstRow && this.isFirstColumn; }
