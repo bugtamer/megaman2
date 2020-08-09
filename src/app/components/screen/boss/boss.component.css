@@ -1,0 +1,7 @@
+.boss {
+  position: absolute;
+}
+
+.isDefeated {
+  opacity: 25%;
+}

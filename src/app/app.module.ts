@@ -6,6 +6,8 @@ import { Megaman2Component } from './components/megaman2/megaman2.component';
 import { PasswordBoardComponent } from './components/password-board/password-board.component';
 import { PasswordScreenComponent } from './components/screen/password-screen/password-screen.component';
 import { MarkerComponent } from './components/screen/marker/marker.component';
+import { BossScreenComponent } from './components/screen/boss-screen/boss-screen.component';
+import { BossComponent } from './components/screen/boss/boss.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { MarkerComponent } from './components/screen/marker/marker.component';
     PasswordBoardComponent,
     PasswordScreenComponent,
     MarkerComponent,
+    BossScreenComponent,
+    BossComponent,
   ],
   imports: [
     BrowserModule

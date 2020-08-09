@@ -1,1 +1,36 @@
-/* You can add global styles to this file, and also import other style files */
+@-moz-keyframes blink {
+    0%{ opacity:  1; }
+   50%{ opacity: .5; }
+  100%{ opacity:  1; }
+}
+
+@-webkit-keyframes blink {
+   0%{ opacity:  1; }
+  50%{ opacity: .5; }
+ 100%{ opacity:  1; }
+}
+
+@-ms-keyframes blink {
+   0%{ opacity:  1; }
+  50%{ opacity: .5; }
+ 100%{ opacity:  1; }
+}
+
+/* Opera */
+@keyframes blink {
+   0%{ opacity:  1; }
+  50%{ opacity: .5; }
+ 100%{ opacity:  1; }
+}
+
+.fade-in-out:hover:not(.isDefeated) {
+  -moz-transition:    all 125ms ease-in-out;
+  -webkit-transition: all 125ms ease-in-out;
+  -o-transition:      all 125ms ease-in-out;
+  -ms-transition:     all 125ms ease-in-out;
+  transition:         all 125ms ease-in-out; 
+  -moz-animation:     blink normal 250ms infinite ease-in-out;
+  -webkit-animation:  blink normal 250ms infinite ease-in-out;
+  -ms-animation:      blink normal 250ms infinite ease-in-out;
+  animation:          blink normal 250ms infinite ease-in-out;
+}

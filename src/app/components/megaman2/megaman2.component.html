@@ -1,5 +1,5 @@
 <h1>
-  <a href="https://github.com/bugtamer/megaman2/">Megaman 2</a>
+  <a href="https://github.com/bugtamer/megaman2/">Megaman 2™</a>
 </h1>
 <h2>Password generator</h2>
 
@@ -13,7 +13,4 @@
 
 <p>{{ password.currentEtanks }} E-tanks</p>
 
-<div *ngFor="let boss of password.bosses">
-  <input type="checkbox" (change)="boss.toggleIsDefeated()" [id]="boss.name">
-  <label [for]="boss.name">{{ boss.item.join(' + ') }}</label>
-</div>
+<mm2-boss-screen [password]="password"></mm2-boss-screen>
