@@ -26,7 +26,7 @@
 
 ### Default password
 
-`['A1', 'B2', 'B4', 'C1', 'C5', 'D1', 'D3', 'E3', 'E5']`
+`['A1', 'B5', 'C3', 'C4', 'D2', 'D5', 'E1', 'E2', 'E4']`
 
 - 0 E-Tanks
 - 0 Defeated bosses
@@ -34,10 +34,10 @@
 |   | 1 | 2 | 3 | 4 | 5 |
 | - | - | - | - | - | - |
 | A | * |   |   |   |   |
-| B |   | * |   | * |   |
-| C | * |   |   |   | * |
-| D | * |   | * |   |   |
-| E |   |   | * |   | * |
+| B |   |   |   |   | * |
+| C |   |   | * | * |   |
+| D |   | * |   |   | * |
+| E | * | * |   | * |   |
 
 ### Boss codification based on the number of E-tanks
 
