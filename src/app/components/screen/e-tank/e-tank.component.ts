@@ -42,11 +42,11 @@ export class ETankComponent implements AfterViewInit {
   }
 
   get quantityImage(): string {
-    return `/assets/img/numbers/${this.etank}.png`;
+    return `../../../../assets/img/numbers/${this.etank}.png`;
   }
 
   get etankImage(): string {
-    return '/assets/img/e.png';
+    return '../../../../assets/img/e.png';
   }
 
   onSelect(): void {

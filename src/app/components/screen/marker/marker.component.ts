@@ -24,7 +24,7 @@ export class MarkerComponent implements OnChanges {
   }
 
   get url(): string {
-    return '../../../assets/img/marker.png';
+    return '../../../../assets/img/marker.png';
   }
 
   // LOWER LEVEL IMPLEMENTATION DETAILS

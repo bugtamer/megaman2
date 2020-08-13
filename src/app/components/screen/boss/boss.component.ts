@@ -39,7 +39,7 @@ export class BossComponent implements AfterViewInit {
 
   get url(): string {
     const bossName = this.boss.name.toLowerCase();
-    return `/assets/img/bosses/${bossName}.png`;
+    return `../../../../assets/img/bosses/${bossName}.png`;
   }
 
   get name(): string {
