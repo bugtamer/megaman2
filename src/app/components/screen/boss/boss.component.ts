@@ -42,6 +42,15 @@ export class BossComponent implements AfterViewInit {
     return `/assets/img/bosses/${bossName}.png`;
   }
 
+  get name(): string {
+    return this.item ? `${this.boss.name} + ${this.item}` : this.boss.name;
+  }
+
+  get item(): string {
+    const item = this.boss.item[1];
+    return item ? item.substr(4, item.length) : '';
+  }
+
   onClick(): void {
     this.change.emit();
   }

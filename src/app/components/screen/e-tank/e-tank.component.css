@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  background-color: black;
+  padding: 8px 8px;
+  width: 100%;
+}
+
+span {
+  position: absolute;
+  margin: 8px 8px;
+  align-items: center;
+}
+
+.number {
+    margin-bottom: 4px;
+    margin-right: 4px;
+}
+
+.shadow {
+  opacity: 35%;
+  cursor: pointer;
+}

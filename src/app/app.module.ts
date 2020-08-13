@@ -8,6 +8,8 @@ import { PasswordScreenComponent } from './components/screen/password-screen/pas
 import { MarkerComponent } from './components/screen/marker/marker.component';
 import { BossScreenComponent } from './components/screen/boss-screen/boss-screen.component';
 import { BossComponent } from './components/screen/boss/boss.component';
+import { ETankComponent } from './components/screen/e-tank/e-tank.component';
+import { ItemsComponent } from './components/screen/items/items.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { BossComponent } from './components/screen/boss/boss.component';
     MarkerComponent,
     BossScreenComponent,
     BossComponent,
+    ETankComponent,
+    ItemsComponent,
   ],
   imports: [
     BrowserModule

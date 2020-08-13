@@ -1,10 +1,10 @@
 import { Component, Input, ViewChild, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
 import { Coordinate } from 'src/app/models/coordinate.model';
 
-const IMAGE_X_OFFSET = 69;
-const IMAGE_Y_OFFSET = 69;
-const SEPARATION     = 16;
-const A_CHAR_CODE    = 65;
+const IMAGE_X_OFFSET = 173;
+const IMAGE_Y_OFFSET =  69;
+const SEPARATION     =  16;
+const A_CHAR_CODE    =  65;
 
 @Component({
   selector: 'mm2-marker',

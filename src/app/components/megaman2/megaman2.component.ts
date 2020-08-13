@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Password } from 'src/app/models/password.model';
-import { Coordinate } from 'src/app/models/coordinate.model';
 
 @Component({
   selector: 'mm2-megaman2',
@@ -23,16 +22,21 @@ export class Megaman2Component {
     return coords;
   }
 
-  get isIncButtonDisable(): boolean {
-    const yMax = Coordinate.Y_MAX - 1;
-    const isLessThanUpperLimit = (this.password.currentEtanks < yMax);
-    return ! isLessThanUpperLimit;
-  }
-
-  get isDecButtonDisable(): boolean {
-    const yMin = Coordinate.Y_MIN - 1;
-    const isGreaterThanLowerLimit = (this.password.currentEtanks > yMin);
-    return ! isGreaterThanLowerLimit;
+  setEtanks(etanks: number): void {
+    const isIncrement = (etanks > this.password.currentEtanks);
+    let pendingChanges = Math.abs(this.password.currentEtanks - etanks);
+    console.debug('etanks', etanks);
+    console.debug('isIncrement', isIncrement);
+    console.debug('pendingChanges', pendingChanges);
+    while (pendingChanges-- > 0) {
+      if (isIncrement) {
+        this.password.incEtanks();
+        console.debug('inc');
+      } else {
+        this.password.decEtanks();
+        console.debug('dec');
+      }
+    }
   }
 
 }

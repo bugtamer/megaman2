@@ -1,18 +1,13 @@
-h1,
-h2,
-p,
-pre {
+.container {
+  width: 336px;
+  padding: 0;
+  margin: 1em 0;
   text-align: center;
-}
-
-.center {
-  margin:  auto;
-  width:   88%;
 }
 
 a:active,
 a:link,
 a:hover,
 a:visited {
-  color: black;
+  color: white;
 }

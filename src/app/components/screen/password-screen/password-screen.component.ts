@@ -11,4 +11,16 @@ export class PasswordScreenComponent {
   @Input()
   password: Password;
 
+  setEtanks(etanks: number): void {
+    const isIncrement = (etanks > this.password.currentEtanks);
+    let pendingChanges = Math.abs(this.password.currentEtanks - etanks);
+    while (pendingChanges-- > 0) {
+      if (isIncrement) {
+        this.password.incEtanks();
+      } else {
+        this.password.decEtanks();
+      }
+    }
+  }
+
 }

@@ -1,0 +1,23 @@
+.item {
+  position: absolute;
+  cursor: pointer;
+}
+
+.isNotObtained {
+  opacity: 25%;
+}
+
+.heatman {
+  top:   200px;
+  right: 136px;
+}
+
+.airman {
+  top:   232px;
+  right: 136px;
+}
+
+.flashman {
+  top:   272px;
+  right: 136px;
+}

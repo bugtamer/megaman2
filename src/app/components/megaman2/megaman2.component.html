@@ -1,18 +1,7 @@
-<h1>
-  <a href="https://github.com/bugtamer/megaman2/">Megaman 2™</a>
-</h1>
-<h2>Password generator</h2>
+<div class="container">
+  <mm2-password-screen [password]="password" [title]="passwordCoordinates"></mm2-password-screen>
 
-<div class="center">
-  <mm2-password-screen [password]="password"></mm2-password-screen>
-  <pre>{{ passwordCoordinates }}</pre>
-</div>
-
-<button (click)="password.incEtanks()" [disabled]="isIncButtonDisable">Increase E-tank</button>
-<button (click)="password.decEtanks()" [disabled]="isDecButtonDisable">Decrease E-tank</button>
-
-<p>{{ password.currentEtanks }} E-tanks</p>
-
-<div class="center">
-  <mm2-boss-screen [password]="password"></mm2-boss-screen>
+  <small>
+    <a href="https://github.com/bugtamer/megaman2/">Git repo</a>
+  </small>
 </div>
