@@ -2,6 +2,8 @@
 
 [Check it out](https://bugtamer.github.io/megaman2/)
 
+![Megaman 2 snapshot](./src/assets/img/snapshots/v0.4.0.png)
+
 ## Table Of Content
 
 - [Password generator](#password-generator)
