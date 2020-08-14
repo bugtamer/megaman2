@@ -1,5 +1,6 @@
 import { Component, AfterViewInit, ViewChild, ElementRef, Input, Output, EventEmitter } from '@angular/core';
 import { Boss } from 'src/app/models/boss.model';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'mm2-boss',
@@ -39,7 +40,7 @@ export class BossComponent implements AfterViewInit {
 
   get url(): string {
     const bossName = this.boss.name.toLowerCase();
-    return `../../../../assets/img/bosses/${bossName}.png`;
+    return environment.imageBasePath + `bosses/${bossName}.png`;
   }
 
   get name(): string {

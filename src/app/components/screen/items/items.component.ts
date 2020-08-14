@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Password } from 'src/app/models/password.model';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'mm2-items',
@@ -36,6 +37,18 @@ export class ItemsComponent {
 
   onFlashmanClick(): void {
     this.flashmanChange.emit();
+  }
+
+  get heatmanUrl(): string {
+    return environment.imageBasePath + 'items/item-1.png';
+  }
+
+  get airmanUrl(): string {
+    return environment.imageBasePath + 'items/item-2.png';
+  }
+
+  get flashmanUrl(): string {
+    return environment.imageBasePath + 'items/item-3.png';
   }
 
 }

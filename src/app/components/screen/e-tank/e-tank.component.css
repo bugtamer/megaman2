@@ -17,6 +17,6 @@ span {
 }
 
 .shadow {
-  opacity: 35%;
+  opacity: .25;
   cursor: pointer;
 }
