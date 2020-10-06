@@ -17,6 +17,7 @@
 - [Github page deployment](#github-page-deployment)
   - [Add dependency](#add-dependency)
   - [Deploy](#deploy)
+- [To Do](#to-do)
 - [Info](#info)
 
 ## Password generator
@@ -93,6 +94,20 @@
 ### Deploy
 
 `ng deploy --base-href=/megaman2/ --message="vX.Y.Z"`
+
+## To Do
+
+- [ ] FIX blinking boss effect after touching an unselected boss on touch screen.
+      It stops when the blinking boss looses its focus or it is unselected.
+- [ ] FIX blinking item effect after touching an item on touch screen.
+      It only stops when the blinking item looses its focus.
+- [ ] RELEASE a new patch version.
+- [ ] IMPROVE eTanks layout: alignment, margins, etc.
+- [ ] IMPROVE item layout: vertical alignment, margins, etc.
+- [ ] RELEASE a new minor version.
+- [ ] ADD PWA features.
+- [ ] RELEASE a new major version.
+- [ ] ARCHIVE this repo.
 
 ## Info
 
