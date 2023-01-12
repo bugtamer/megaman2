@@ -64,9 +64,8 @@
 
 ## Requirements
 
-- Node.js 14.4.0
-- Angular 9
-- Angular CLI 9.1.12
+- Node.js 18.10
+- Angular 15
 
 ## Install and run
 
@@ -107,7 +106,7 @@
 - [ ] RELEASE a new minor version.
 - [ ] ADD PWA features.
 - [ ] RELEASE a new major version.
-- [ ] ARCHIVE this repo.
+- [ ] Keep dependencies up to date.
 
 ## Info
 
