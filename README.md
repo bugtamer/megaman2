@@ -86,13 +86,16 @@
 
 ## Github page deployment
 
-### Add dependency
+`npm run ghpages`
+Commit and push changes
 
-`ng add angular-cli-ghpages`
+### ~~Add dependency~~
 
-### Deploy
+~~`ng add angular-cli-ghpages`~~
 
-`ng deploy --base-href=/megaman2/ --message="vX.Y.Z"`
+### ~~Deploy~~
+
+~~`ng deploy --base-href=/megaman2/ --message="vX.Y.Z"`~~
 
 ## To Do
 
