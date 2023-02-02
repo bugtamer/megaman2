@@ -4,7 +4,7 @@ RUN mkdir -p /app
 WORKDIR /app
 COPY . /app
 RUN npm install
-RUN npm install @angular/cli@9.1.12
+RUN npm install @angular/cli@15.1.1
 RUN npm run build --prod
 
 # STAGE 2
