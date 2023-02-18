@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Password } from 'src/app/models/password.model';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'mm2-password-screen',
@@ -21,6 +22,10 @@ export class PasswordScreenComponent {
         this.password.decEtanks();
       }
     }
+  }
+
+  get url(): string {
+    return environment.imageBasePath + 'screen.png';
   }
 
 }

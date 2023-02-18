@@ -1,4 +1,5 @@
 import { Component, AfterViewInit, Input, Output, EventEmitter, ViewChild, ElementRef } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'mm2-e-tank',
@@ -42,7 +43,11 @@ export class ETankComponent implements AfterViewInit {
   }
 
   get quantityImage(): string {
-    return `assets/img/numbers/${this.etank}.png`;
+    return environment.imageBasePath + `numbers/${this.etank}.png`;
+  }
+
+  get etankImage(): string {
+    return environment.imageBasePath + 'e.png';
   }
 
   onSelect(): void {

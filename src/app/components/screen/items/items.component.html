@@ -2,7 +2,7 @@
   style="left: 200px; top: 240px"
   class="item fade-in-out"
   [class.isNotObtained]="! password?.heatman?.isDefeated"
-  src="assets/img/items/item-1.png"
+  [src]="heatmanUrl"
   alt="Heatman - Item 1"
   title="Heatman - Item 1"
   (click)="onHeatmanClick()">
@@ -11,7 +11,7 @@
   style="left: 232px; top: 240px"
   class="item fade-in-out"
   [class.isNotObtained]="! password?.airman?.isDefeated"
-  src="assets/img/items/item-2.png"
+  [src]="airmanUrl"
   alt="Airman - Item 2"
   title="Airman - Item 2"
   (click)="onAirmanClick()">
@@ -20,7 +20,7 @@
   style="left: 272px; top: 240px"
   class="item fade-in-out"
   [class.isNotObtained]="! password?.flashman?.isDefeated"
-  src="assets/img/items/item-3.png"
+  [src]="flashmanUrl"
   alt="Flashman - Item 3"
   title="Flashman - Item 3"
   (click)="onFlashmanClick()">
