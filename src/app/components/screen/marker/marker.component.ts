@@ -1,6 +1,5 @@
 import { Component, Input, ViewChild, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
 import { Coordinate } from 'src/app/models/coordinate.model';
-import { environment } from 'src/environments/environment';
 
 const IMAGE_X_OFFSET = 173;
 const IMAGE_Y_OFFSET =  69;
@@ -22,10 +21,6 @@ export class MarkerComponent implements OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     this.putMarker();
-  }
-
-  get url(): string {
-    return environment.imageBasePath + 'marker.png';
   }
 
   // LOWER LEVEL IMPLEMENTATION DETAILS
