@@ -4,6 +4,8 @@
 
 ![Megaman 2 snapshot](./src/assets/img/snapshots/v0.4.0.png)
 
+- See [Megaman](https://github.com/bugtamer/gb-megaman) (Game Boy) Password generator
+
 ## Table Of Content
 
 - [Password generator](#password-generator)
